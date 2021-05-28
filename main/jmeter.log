@@ -1,0 +1,17 @@
+2021/05/28 10:12:31 INFO  - jmeter.util.JMeterUtils: Setting Locale to zh_CN 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: Loading user properties from: /usr/share/jmeter/bin/user.properties 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: Loading system properties from: /usr/share/jmeter/bin/system.properties 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: Version 2.13.20180731 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: java.version=11.0.11 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: java.vm.name=OpenJDK 64-Bit Server VM 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: os.name=Linux 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: os.arch=amd64 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: os.version=5.8.0-53-generic 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: Default Locale=中文 (中国) 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: JMeter  Locale=中文 (中国) 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: JMeterHome=/usr/share/jmeter 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: user.dir  =/home/wyka/桌面/stockDraft/main 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: PWD       =/home/wyka/桌面/stockDraft/main 
+2021/05/28 10:12:31 INFO  - jmeter.JMeter: IP: 127.0.1.1 Name: wyka-ZenBook-UX433FN-U4300FN FullName: wyka-ZenBook-UX433FN-U4300FN 
