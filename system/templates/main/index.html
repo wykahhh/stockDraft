@@ -1,0 +1,79 @@
+{% load static %}
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<body>
+    <!--导航条-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- 界面大小改变时隐藏原导航条 -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo placeholder</a>
+          </div>
+      
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              {% if request.session.is_login %}
+                  <li><a href="#">当前在线：{{ request.session.user_name }}</a></li>
+                  <li><a href="/main/logout/">登出</a></li>
+              {% else %}
+                  <li><a href="/main/login/">登录</a></li>
+                  <li><a href="/main/register/">注册</a></li>
+              {% endif %}
+          </ul>
+          </div>
+        </div>
+      </nav>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
+        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
+    </span>
+    <header id="panel" class="panel-cover">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+
+                <div class="panel-main__content">
+                    
+                     <div class="ih-item circle effect right_to_left"> 
+                            <div class="img"><img src="../../static/img/money.jpg" alt="img" class="js-avatar iUp profilepic"></div> 
+                    </div>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">股票模拟交易系统</p>
+                    <div>
+                        {% block title %}主页{% endblock %}
+                        {% block content %}
+
+                        {% if request.session.is_login %}
+                          {% for code in stockcodes %}
+                            
+                          {% endfor %}
+                        {% else %}
+                        <h2>你尚未登录，只能访问公开内容！</h2>
+                        {% endif %}
+                        {% endblock %}
+                          
+                  </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+        <div class="remark iUp">
+            <p class="power">© 2021 Powered By 19Fintech </p>
+        </div>
+    </header>
+    <script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/js/fetch.min.js"></script>
+    <script type="text/javascript" src="../../static/js/main.js"></script>
+</body>
+</html>
